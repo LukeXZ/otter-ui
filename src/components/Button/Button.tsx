@@ -1,8 +1,13 @@
 import React from 'react'
+import styles from './Button.module.css'
 
-const Button = () => {
+export interface OtterUIButtonProp {
+  label: string
+}
+
+const Button = ({label}: OtterUIButtonProp) => {
   return (
-    <button></button>
+    <button className={styles['button-container']}>{label}</button>
   )
 }
 
