@@ -1,3 +1,25 @@
-.button-container {
-  font-size: 32px;
+.button {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: var(--otter-color-on-primary-container, #363636);
+  background-color: var(--otter-color-primary-container, #EEEEEE);
+}
+
+.button-size-regular {
+  height: var(--otter-height-button-rgl, 36px);
+  width: var(--otter-width-button-rgl, 108px);
+  font-size: var(--otter-font-size-rgl, 12px);
+}
+
+.button-size-large {
+  height: var(--otter-height-button-lg, 60px);
+  width: var(--otter-width-button-lg, 180px);
+  font-size: var(--otter-font-size-lg, 16px);
 }

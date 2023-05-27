@@ -7,9 +7,12 @@ export default {
   component: Button,
 } as Meta<typeof Button>
 
-const template: StoryFn<typeof Button> = (args) => <Button {...args} />
+const template: StoryFn<typeof Button> = (args) => {
+  return <Button {...args} />
+}
 
 export const exampleButton = template.bind({})
+
 exampleButton.args = {
-  label: 'hello otter ui'
+  label: 'hello otter ui',
 }

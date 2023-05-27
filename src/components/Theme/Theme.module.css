@@ -1,0 +1,23 @@
+.otter-theme {
+  --otter-color-primary: var(--otter-color-primary-light, #3a5a40);
+  --otter-color-on-primary: var(--otter-color-on-primary-light, #dad7cd);
+  --otter-color-primary-container: var(--otter-color-primary-container-light, #a3b18a);
+  --otter-color-on-primary-container: var(--otter-color-on-primary-container-light, #344e41);
+  --otter-color-secondary: var(--otter-color-secondary-light, #a5a58d);
+  --otter-color-on-secondary: var(--otter-color-on-secondary-light, #ffe8d6);
+  --otter-color-secondary-container: var(--otter-color-secondary-container-light, #a5a58d);
+  --otter-color-on-secondary-container: var(--otter-color-on-secondary-container-light, #6b705c);
+}
+
+@media (prefers-color-scheme: dark) {
+  .otter-theme {
+    --otter-color-primary: var(--otter-color-primary-dark);
+    --otter-color-on-primary: var(--otter-color-on-primary-dark);
+    --otter-color-primary-container: var(--otter-color-primary-container-dark);
+    --otter-color-on-primary-container: var(--otter-color-on-primary-container-dark);
+    --otter-color-secondary: var(--otter-color-secondary-dark);
+    --otter-color-on-secondary: var(--otter-color-on-secondary-dark);
+    --otter-color-secondary-container: var(--otter-color-secondary-container-dark);
+    --otter-color-on-secondary-container: var(--otter-color-on-secondary-container-dark);
+  }
+}
